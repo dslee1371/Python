@@ -1,1 +1,17 @@
 # python
+
+## Reference
+### Install library
+`pip install pywinauto`
+
+### Isue 1
+```
+C:\stock-auto>python test.py
+Traceback (most recent call last):
+  File "C:\stock-auto\test.py", line 1, in <module>
+    import win32com.client
+ModuleNotFoundError: No module named 'win32com'
+
+# Resolution 1
+pip install pywin32
+```
