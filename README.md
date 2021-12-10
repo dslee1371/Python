@@ -1,5 +1,8 @@
 # python
-
+## IDE
+- Installation 32 bit python
+- Environment path configuration
+- Configure administrative permition to python files.
 ## Reference
 ### Install library
 `pip install pywinauto`
