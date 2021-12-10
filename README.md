@@ -1,6 +1,7 @@
 # python
 ## IDE
 - Installation 32 bit python
+- Custom Installation with enabled all feature
 - Environment path configuration
 - Configure administrative permition to python files.
 ## Reference
