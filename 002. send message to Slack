@@ -1,0 +1,29 @@
+## Configure pythone env.
+```
+python -m venv .venv
+souce .venv/scripts/activate # Windows is 'source .venv/Sciprts/activate
+pip install "slack_sdk>=3.0"
+export SLACK_BOT_TOKEN=xoxp-...
+```
+
+## Send message
+```
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+import os
+from slack_sdk import WebClient
+from slack_sdk.errors import SlackApiError
+
+slack_token = os.environ["SLACK_BOT_TOKEN"]
+client = WebClient(token=slack_token)
+
+try:
+    response = client.chat_postMessage(
+        channel="dsbots",
+        text="44Hello from your app! :tada:"
+    )
+except SlackApiError as e:
+    # You will get a SlackApiError if "ok" is False
+    assert e.response["error"]    # str like 'invalid_auth', 'channel_not_found'
+```
