@@ -22,15 +22,7 @@ pip install pywin32
 ```
 
 ### Test1
-<<<<<<< HEAD
-<<<<<<< HEAD
 ### change DM to dev 
 ### change DM to dev1
-=======
-
-### change to direct main
->>>>>>> main
-=======
-### change DM to dev 
-### change DM to dev1
->>>>>>> dev
+### change DM to dev2
+### change DM to dev3
